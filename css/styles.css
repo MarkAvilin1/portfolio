@@ -145,11 +145,16 @@ nav ul li a{
 
 #header-image {
     margin: 0px;
+    padding: 0px;
+    width: 80%;
     text-align: right;
-    width: 100%;
-    /* border-radius: 50% 0 50% 0 ; */
-    /* border: 5px double white; */
-    /* box-shadow: 0 8px 6px black; */
+    float: right;
+    /* position: relative;
+    right: 0;
+    top: -9%;
+    border-radius: 50% 0 50% 0 ;
+    border: 5px double white;
+    box-shadow: 0 8px 6px black; */
 }
 
 header {
