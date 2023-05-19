@@ -18,6 +18,42 @@
     font-weight: 500;
 }
 
+/* Animations */
+.fade-in-from-bottom {
+    opacity: 0; /* Initially hide the element */
+    animation: fade-in-bottom 1s ease-in forwards; /* Apply the fade-in animation */
+  }
+  
+  .fade-in-from-left {
+    opacity: 0; /* Initially hide the element */
+    animation: fade-in-left 1s ease-in forwards; /* Apply the fade-in animation */
+    animation-delay: 1s; /* Delay the start of the animation by 1 second */
+  }
+  
+  @keyframes fade-in-bottom {
+    from {
+      opacity: 0; /* Start with 0 opacity */
+      transform: translateY(50px); /* Move the element 50px down */
+    }
+    to {
+      opacity: 1; /* Fade to full opacity */
+      transform: translateY(0); /* Move the element back to its original position */
+    }
+  }
+  
+  @keyframes fade-in-left {
+    from {
+      opacity: 0; /* Start with 0 opacity */
+      transform: translateX(-250px); /* Move the element 50px to the left */
+    }
+    to {
+      opacity: 1; /* Fade to full opacity */
+      transform: translateX(0); /* Move the element back to its original position */
+    }
+  }
+  
+
+
 /* header & Nav */
 
 header {
